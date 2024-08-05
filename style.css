@@ -1,0 +1,123 @@
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(130deg, #6cbdd8 , #d898e8);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.TO-DO{
+    background-color: whitesmoke;
+    width: 100%;
+    max-width: 600px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    margin-top: 80px;
+    
+}
+
+.TO-DO h2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+
+}
+
+.TO-DO h2 img{
+    max-width: 30px;
+    margin-left: 10px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    background-color: #b3d3de;
+   
+
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+button{
+    border: none;
+    outline: none;
+    background-color: #d898e8;
+    padding: 16px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: black;
+    font-size: 17px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 10px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-image: url(img/uncheck.png);
+    background-size: cover;
+    background-position: center;
+    left: 10px;
+}
+
+ul li.checked{
+   color: rgb(128, 127, 125);
+   text-decoration: line-through;
+
+}
+ul li.checked::before{
+    background-image: url(img/check.png);
+}
+
+ul li .cross {
+    color: rgb(14, 13, 13);
+    position: absolute;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+ul li .cross:hover {
+    background-color: #c1aac7;
+}
+
